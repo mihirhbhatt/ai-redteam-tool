@@ -9,23 +9,7 @@ before connecting to a model.
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    User[Operator / CLI] --> Config[Configuration and interactive setup]
-    Config --> Engine[Assessment engine]
-    Engine --> Tests[Selected test modules]
-    Tests --> Adapters[Target adapters]
-    Adapters --> Target[Ollama or hosted model]
-    Target --> Tests
-    Tests --> Evaluate[Rule-based evaluator or LLM judge]
-    Evaluate -. Optional model request .-> Judge[Separate judge adapter and model]
-    Evaluate --> Scorer[Scoring]
-    Scorer --> Reports[JSON / CSV / HTML reports]
-    Reports --> Dashboard[Local read-only dashboard]
-    User --> CVE[NVD CVE lookup]
-    CVE -. HTTPS .-> NVD[NIST NVD API]
-    User --> Manual[Manual engagement and CVSS reporting]
-```
+![Architecture diagram showing the assessment, reporting, CVE lookup, and manual engagement workflows](docs/images/architecture.svg)
 
 The assessment engine orchestrates configured tests, sends prompts through the
 selected target adapter, evaluates responses, then writes reports. A judge is
