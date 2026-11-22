@@ -1,0 +1,26 @@
+
+# Credential and secret labels
+password:
+api_key:
+token:
+secret:
+credential
+bearer
+authorization:
+
+# Internal prompt and configuration disclosure indicators
+system prompt
+internal information
+confidential
+private key
+access key
+database connection string
+environment variable
+
+# Personal and regulated information indicators
+social security number
+date of birth
+bank account number
+credit card number
+passport number
+medical record

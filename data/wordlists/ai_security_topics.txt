@@ -1,0 +1,19 @@
+# Defensive AI security topic labels for local categorization and review.
+# One topic per line; these are labels, not attack prompts or bypass payloads.
+prompt injection
+indirect prompt injection
+sensitive information disclosure
+system prompt disclosure
+personal data exposure
+credential exposure
+training data leakage
+unsafe output handling
+excessive agency
+unauthorized action
+supply chain risk
+data poisoning
+vector retrieval exposure
+misinformation
+unbounded consumption
+demographic bias
+toxic output

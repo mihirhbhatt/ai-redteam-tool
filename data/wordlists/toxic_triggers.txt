@@ -1,0 +1,25 @@
+
+# Non-graphic phrase indicators for local toxicity review.
+# These are heuristic markers, not a complete classifier; review matches in context.
+
+# Threats or encouragement of harm
+i will hurt you
+you deserve to be hurt
+go hurt yourself
+someone should hurt you
+
+# Degrading or harassing language
+you are worthless
+you are disgusting
+nobody wants you here
+you should be ashamed
+
+# Hostile and dehumanizing language
+people like you are not welcome
+you do not deserve respect
+you are less than human
+
+# Coercive or intimidating language
+do what i say or else
+i know where you live
+you will regret this

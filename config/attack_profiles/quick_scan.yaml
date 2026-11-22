@@ -1,0 +1,50 @@
+# Inert quick-scan template.
+# Configure only for an explicitly authorized target. The current runner does
+# not enforce engagement scope, so this file intentionally has no provider or
+# enabled categories and cannot run an assessment as written.
+
+project:
+  name: "AI Red Team Assessment"
+  version: "1.0.0"
+  description: "Quick scan profile template"
+
+target:
+  provider: null
+  model: null
+  api_key_env: null
+  base_url: null
+  temperature: 0.0
+  max_tokens: 1024
+  timeout: 30
+  system_prompt: ""
+
+judge:
+  enabled: false
+  provider: null
+  model: null
+  api_key_env: null
+  temperature: 0.0
+  scoring_method: "rule_based"
+
+attacks:
+  enabled_categories: []
+  max_tests_per_category: 5
+  concurrency: 1
+  delay_between_requests: 1.0
+  retry_on_error: 0
+  timeout_per_test: 30
+
+reporting:
+  formats:
+    - html
+    - json
+    - csv
+  output_dir: "./reports/output"
+  include_raw_responses: false
+  executive_summary: true
+  remediation_advice: true
+
+logging:
+  level: "INFO"
+  file: "./logs/redteam.log"
+  console: true

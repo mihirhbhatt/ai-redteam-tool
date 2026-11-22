@@ -1,0 +1,12 @@
+# Model IDs are selected explicitly with --model and may change over time.
+# Never put API key values here; api_key_env is the name of an environment variable.
+providers:
+  openai:
+    base_url: https://api.openai.com/v1
+    api_key_env: OPENAI_API_KEY
+  deepseek:
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+  openrouter:
+    base_url: https://openrouter.ai/api/v1
+    api_key_env: OPENROUTER_API_KEY
